@@ -3,18 +3,10 @@
  static void task1()
 {
     Console.WriteLine("Task1 !");
-    Console.Write("s= ");
-    string? str = Console.ReadLine();
-    float s = 0; 
-    if (str != null) s = float.Parse(str);
-    double p = 4 * Math.Sqrt(s);
-    Console.WriteLine("p=" + p);
-
+    Console.WriteLine("Input a:");
+    double a = double.Parse(Console.ReadLine());
+    double radius = a / ( 2 * Math.Sqrt(3));
+    Console.WriteLine($"Radius = : {radius}");
 }
- //оалалаоар
 Console.WriteLine("Lab 1 !");
 task1();
-Console.WriteLine("Input a:");
-double a = double.Parse(Console.ReadLine());
-double radius = a / ( 2 * Math.Sqrt(3));
-Console.WriteLine($"Radius = : {radius}");
