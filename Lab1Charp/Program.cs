@@ -37,17 +37,17 @@
      Console.Write("y=");
      float y = float.Parse(Console.ReadLine());
      
-     if ((x <= -15 && y <= 0 && y >= -15) || (x >= 0 && y <= 0 && y >= -15))
+     if (x > -15 && x < 0 && y > -15 && y < 0)
+     {
+         Console.WriteLine("Ні");
+     }
+     else if (x < -15 || x > 0 || y < -15 || y > 0)
      {
          Console.WriteLine("Так");
      }
-     else if ((x > -15 && x < 0 && y == 0) || (x == 0 && y > -15 && y < 0))
-     {
-         Console.WriteLine("На межі");
-     }
      else
      {
-         Console.WriteLine("Ні");
+         Console.WriteLine("На межі");
      }
  }
  static void task4()
